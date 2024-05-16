@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>albums</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-itme  button *ngFor ="let item of (results | async)" [routerLink] = "['/', 'album', item.id]" >
+      <ion-label text-wrap>
+        <p cursor-pointer>{{item.title}}</p>
+      </ion-label>
+    </ion-itme>
+  </ion-list>
+</ion-content>

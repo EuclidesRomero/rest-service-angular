@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detail album</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-card *ngIf="information">
+  <ion-card-content >
+    <p>Titulo:{{information}}</p>
+  </ion-card-content>
+ </ion-card>
+</ion-content>
